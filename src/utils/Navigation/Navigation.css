@@ -1,0 +1,19 @@
+.menu-item {
+    opacity: 0.6;
+    margin: 5px 0px;
+}
+
+.menu-item:hover {
+    cursor: pointer;
+}
+
+.selected-menu-item {
+    opacity: 1;
+    scale: 1.7;
+    font-weight: 750;
+    /* font-size: 25px; */
+    color: var(--violet-color);
+    /* margin-right: 5px; */
+    transition: all .3s ease-out;
+}
+

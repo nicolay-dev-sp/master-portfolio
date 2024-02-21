@@ -1,0 +1,8 @@
+.content {
+    padding: 0px 2px;
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    flex: 4;
+}

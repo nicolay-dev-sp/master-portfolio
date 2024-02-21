@@ -1,0 +1,24 @@
+
+.links-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.socialIcons {
+    margin: 5px 15px;
+    color: var(--violet-color);
+    opacity: 0;
+}
+
+.socialIcons:hover {
+    opacity: 1;
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.easeInOpacity {
+    opacity: 0.65;
+    transition: opacity 0.3s ease-in-out;
+}

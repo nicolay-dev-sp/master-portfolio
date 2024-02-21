@@ -1,0 +1,41 @@
+.title-section {
+    display: flex;
+    /* margin: 50px 10px 0px; */
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    flex-grow: 2;
+    justify-content: flex-end;
+}
+
+.title-header{
+    display: flex;
+    align-items: flex-start;
+
+}
+
+.avatar {
+    max-width: 112px;
+    height: auto;
+}
+
+.web-avatar {
+    max-width: 100px;
+    height: auto;
+    /* transform: scaleX(-1) rotate(3deg); */
+    transform: rotate(3deg);
+    margin: 5px 22px;
+    /* transition: transform 0.5s ease; Agrega una transición suave */
+  /* Agrega un poco de escala inicial para el efecto de zoom */
+    /* transform: scale(1); */
+}
+
+.title-name {
+    margin: 5px 0px;
+    font-weight: 800;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    color: var(--light-blue-color);
+    /* color: gold; */
+}
