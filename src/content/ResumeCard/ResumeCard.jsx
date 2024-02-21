@@ -1,4 +1,8 @@
 import './ResumeCard.css'
+import avatar from './../../assets/images/AvatarIsolate.png'
+import webIcon from './../../assets/images/WebIcon.png'
+// import avatar from './../../assets/images/avatarIsolate.png'
+// import avatar from 'src/assets/images/avatarIsolate.png'
 import { MainIntroduction } from './MainIntro'
 
 export function ResumeCard (params) {
@@ -7,12 +11,12 @@ export function ResumeCard (params) {
       <article className='title-section'>
         <section className='title-header'>
           <img
-            src='src\assets\images\avatarIsolate.png'
+            src={avatar}
             alt='avatar'
             className='avatar'
           />
           <img
-            src='src/assets/images/WebIcon.png'
+            src={webIcon}
             alt='avatar'
             className='web-avatar'
           />
