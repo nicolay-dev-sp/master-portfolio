@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 
-export function useScroll (selectedSection) {
+export function useScrollSelected (selectedSection) {
   const scrollToSelectedSection = () => {
     if (selectedSection) {
       const contentElement = document.getElementById('content')

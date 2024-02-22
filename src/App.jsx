@@ -4,7 +4,7 @@ import { Footer } from './utils/Footer/Footer'
 import './App.css'
 import { SocialLinks } from './utils/Social/SocialLinks'
 import { WrapperContent } from './content/WrapperContent/WrapperContent'
-import { useState } from 'react'
+import React, { useState } from 'react'
 
 export function App () {
   const [selectedSection, setSelectedSection] = useState(null)
