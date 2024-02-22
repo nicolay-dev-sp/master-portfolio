@@ -8,13 +8,9 @@ import { useState } from 'react'
 
 export function App () {
   const [selectedSection, setSelectedSection] = useState(null)
-  const [activeScroll, setActiveScroll] = useState(false)
 
   const handleSelectedSection = (section) => {
     setSelectedSection(section)
-  }
-  const handleScroll = () => {
-    setActiveScroll(true)
   }
 
   return (
@@ -22,11 +18,11 @@ export function App () {
       <main className='main-container'>
         <header className='basic-info-header'>
           <ResumeCard />
-          <Navigation handleSelectedSection={handleSelectedSection} />
+          <Navigation selectedSection={selectedSection} handleSelectedSection={handleSelectedSection} />
           <SocialLinks />
         </header>
-        <section className={`content-section ${activeScroll ? 'active-scroll' : 'inactive-scroll'}`} onScroll={handleScroll}>
-          <WrapperContent selectedSection={selectedSection} />
+        <section className='content-section'>
+          <WrapperContent selectedSection={selectedSection} handleSelectedSection={handleSelectedSection} />
           <Footer />
         </section>
       </main>

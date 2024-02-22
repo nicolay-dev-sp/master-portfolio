@@ -1,9 +1,7 @@
-import './ResumeCard.css'
+import { MainIntroduction } from './MainIntro'
 import avatar from './../../assets/images/AvatarIsolate.png'
 import webIcon from './../../assets/images/WebIcon.png'
-// import avatar from './../../assets/images/avatarIsolate.png'
-// import avatar from 'src/assets/images/avatarIsolate.png'
-import { MainIntroduction } from './MainIntro'
+import './ResumeCard.css'
 
 export function ResumeCard (params) {
   return (

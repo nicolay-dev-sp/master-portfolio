@@ -3,7 +3,7 @@ import './Content.css'
 export function About ({ id, selectedSection }) {
   return (
     <>
-      <section className='main-content-section' id={id}>
+      <main className='main-content-section' id={id}>
         <p className='introduction-content'>
           My main area is web application
           development, and I possess strong knowledge of Angular, JavaScript,
@@ -24,7 +24,7 @@ export function About ({ id, selectedSection }) {
           myself an open and transparent person, interested in becoming a
           responsible leader with excellent assertive communication skills.
         </p>
-      </section>
+      </main>
     </>
   )
 }

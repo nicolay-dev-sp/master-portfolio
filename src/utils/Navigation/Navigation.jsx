@@ -1,12 +1,8 @@
-import { useState } from 'react'
 import './Navigation.css'
 
-export function Navigation ({ handleSelectedSection }) {
-  const [navigation, setNavigation] = useState('about')
-
+export function Navigation ({ selectedSection, handleSelectedSection }) {
   const handleClick = (event) => {
     const targetSection = event.target.dataset.section
-    setNavigation(targetSection)
     handleSelectedSection(targetSection)
   }
 
@@ -17,7 +13,7 @@ export function Navigation ({ handleSelectedSection }) {
           onClick={handleClick}
           data-section='about'
           className={`menu-item ${
-            navigation === 'about' ? 'selected-menu-item' : ''
+            selectedSection === 'about' ? 'selected-menu-item' : ''
           }`}
         >
           About
@@ -26,7 +22,7 @@ export function Navigation ({ handleSelectedSection }) {
           onClick={handleClick}
           data-section='experience'
           className={`menu-item ${
-            navigation === 'experience' ? 'selected-menu-item' : ''
+            selectedSection === 'experience' ? 'selected-menu-item' : ''
           }`}
         >
           Experience
@@ -35,7 +31,7 @@ export function Navigation ({ handleSelectedSection }) {
           onClick={handleClick}
           data-section='studies'
           className={`menu-item ${
-            navigation === 'studies' ? 'selected-menu-item' : ''
+            selectedSection === 'studies' ? 'selected-menu-item' : ''
           }`}
         >
           Studies

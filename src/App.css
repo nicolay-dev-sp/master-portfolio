@@ -90,16 +90,6 @@ body {
     transition: background-color 10s ease-in-out;
 }
 
-/* 
-
-.active-scroll::-webkit-scrollbar{
-    display: inherit;
-}
-
-.inactive-scroll::-webkit-scrollbar{
-    display: none;
-}
- */
 @media screen and (max-width: 1480px) {
     .main-container {
         width: 81vw;

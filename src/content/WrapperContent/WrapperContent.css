@@ -5,4 +5,5 @@
     scroll-behavior: smooth;
     overflow-y: scroll;
     flex: 4;
+    scroll-snap-type: y mandatory;
 }
