@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
     --background-color: #282c34;
     --background-font: white;
@@ -21,18 +20,25 @@
     font-style: regular;
 }
 
-/* html,body {
-    scrollbar-color:  transparent transparent;
-  } */
-/* ::-webkit-scrollbar {display: none;} */
+@font-face {
+    font-family: 'Montserrat';
+    src: url(./assets/fonts/Montserrat-Regular.ttf);
+    font-weight: regular;
+    font-style: regular;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(./assets/fonts/Montserrat-ExtraBold.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
 
 body {
     margin: 0;
     min-height: 100vh;
-    /* background-color: #F2F2F2; */
     background-color: var(--background-color);
-    font-family: "Montserrat", sans-serif;
-    /* font-family: "CascadiaCode"; */
+    font-family: "Montserrat";
     font-optical-sizing: auto;
     font-style: normal;
     color: var(--background-font);
@@ -43,7 +49,6 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 0px 3vw;
-    /* flex: 2; */
     height: 100vh;
 }
 
@@ -74,7 +79,6 @@ body {
 }
 
 ::-webkit-scrollbar {
-    /* display: none; */
     width: 0.5rem;
     border-radius: 9999px;
     background-color: #303339;
