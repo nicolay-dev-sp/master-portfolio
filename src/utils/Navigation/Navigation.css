@@ -1,10 +1,14 @@
 .menu-item {
     opacity: 0.6;
     margin: 5px 0px;
+    transition: all .3s ease-out;
 }
 
 .menu-item:hover {
     cursor: pointer;
+    scale: 1.7;
+    font-weight: 750;
+
 }
 
 .selected-menu-item {

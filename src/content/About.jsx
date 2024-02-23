@@ -13,9 +13,8 @@ export function About ({ id }) {
     },
     coreStack: {
       text: 'Core stack: React (TS/JS) - Flask (Python) - AWS & Teamwork.',
-      // highlights: ['Core', 'stack:'],
-      italic: ['Core', 'stack:'],
-      highlights: ['React', 'Flask', 'AWS', 'Teamwork.']
+      highlights: ['React', 'Flask', 'AWS', 'Teamwork.'],
+      italic: ['Core', 'stack:']
     },
     codePhilosophy: {
       text: 'Code philosophy: Scalable - Maintainable - Efficient - Deliverable - SOLID - SAFe - Agile & Standardized.',
