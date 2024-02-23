@@ -46,9 +46,11 @@ export function Projects ({ id }) {
           })
         }
         <section className='download-cv-section'>
-          <Button className='download-cv' variant='bordered'>
-            Check full CV here <FontAwesomeIcon icon={faDownload} />
-          </Button>
+          <a target='_blank' href='https://1drv.ms/b/s!AieWYZyae4cEhsEUUjadxqvQLvWI7A?e=bpwDLQ' rel="noreferrer">
+            <Button className='download-cv' variant='bordered' href='https://1drv.ms/b/s!AieWYZyae4cEhsEUUjadxqvQLvWI7A?e=bpwDLQ'>
+              Check full CV here <FontAwesomeIcon icon={faDownload} />
+            </Button>
+          </a>
 
         </section>
       </main>
