@@ -192,3 +192,20 @@
 .aligned-text {
     text-align: center;
 }
+
+
+@media screen and (max-width: 1580px) {
+    .custom-card {
+        margin: 3px;    
+    }
+
+    .download-cv-section {
+        margin: 10px 0px;
+    }
+
+    .download-cv:hover {
+        scale: 1;
+        color: var(--background-font);
+        background-color: #88ca788b;
+    }
+}

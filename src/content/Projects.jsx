@@ -48,7 +48,7 @@ export function Projects ({ id }) {
         <section className='download-cv-section'>
           <a target='_blank' href='https://1drv.ms/b/s!AieWYZyae4cEhsEUUjadxqvQLvWI7A?e=bpwDLQ' rel='noreferrer'>
             <Button className='download-cv' variant='bordered' href='https://1drv.ms/b/s!AieWYZyae4cEhsEUUjadxqvQLvWI7A?e=bpwDLQ'>
-              Check full CV here <FontAwesomeIcon icon={faDownload} />
+              Click here for full CV <FontAwesomeIcon icon={faDownload} />
             </Button>
           </a>
 

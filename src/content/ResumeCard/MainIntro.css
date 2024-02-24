@@ -76,3 +76,9 @@
     display: inline-block;
     animation: breath 2.5s infinite;
 }
+
+
+@media screen and (max-width: 1580px) {
+  .introduction-section {
+  }
+}

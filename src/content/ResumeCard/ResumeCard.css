@@ -39,3 +39,9 @@
     color: var(--light-blue-color);
     /* color: gold; */
 }
+
+@media screen and (max-width: 1580px) {
+    .title-section {
+        margin-bottom: 15px;
+    }
+}
