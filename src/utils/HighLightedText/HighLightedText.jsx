@@ -1,9 +1,10 @@
-export function HighLightedText ({ text, highlightedWords, italic }) {
+export function HighLightedText ({ text, highlightedWords, italic, customClass }) {
   const splitText = text.split(' ')
+  const textClass = customClass || 'introduction-content'
 
   return (
     <>
-      <p className='introduction-content'>
+      <p className={textClass}>
         {
             splitText.reduce((acc, text, index) => {
               if (highlightedWords && highlightedWords.includes(text)) {

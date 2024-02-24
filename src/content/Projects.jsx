@@ -10,7 +10,7 @@ export function Projects ({ id }) {
       company: 'Sailpoint',
       location: 'US Based (Remote)',
       role: 'UI Developer',
-      startDate: '2023',
+      startDate: '2022',
       endDate: 'prest',
       description: 'Definition, planning, development of new features (Filters, Data visualization, API consumption among other scopes).',
       tags: ['Angular', 'Github', 'Figma', 'NestJS']
@@ -30,7 +30,7 @@ export function Projects ({ id }) {
       company: 'Rockwell Automation',
       location: 'Colombia',
       role: 'Full-stack Developer',
-      startDate: '2020',
+      startDate: '2019',
       endDate: '2021',
       description: 'Migration to a new embedded web application (New technologies, new architecture, new styles & functionalities).',
       tags: ['NodeJs', 'Angular', 'Kubernetes', 'SAFe']
@@ -46,7 +46,7 @@ export function Projects ({ id }) {
           })
         }
         <section className='download-cv-section'>
-          <a target='_blank' href='https://1drv.ms/b/s!AieWYZyae4cEhsEUUjadxqvQLvWI7A?e=bpwDLQ' rel="noreferrer">
+          <a target='_blank' href='https://1drv.ms/b/s!AieWYZyae4cEhsEUUjadxqvQLvWI7A?e=bpwDLQ' rel='noreferrer'>
             <Button className='download-cv' variant='bordered' href='https://1drv.ms/b/s!AieWYZyae4cEhsEUUjadxqvQLvWI7A?e=bpwDLQ'>
               Check full CV here <FontAwesomeIcon icon={faDownload} />
             </Button>

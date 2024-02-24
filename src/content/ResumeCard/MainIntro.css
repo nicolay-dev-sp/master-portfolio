@@ -62,7 +62,7 @@
     }
 
     50% {
-        transform: translate3d(0, 0, 0) scale(1.15);
+        transform: translate3d(0, 0, 0) scale(1.17);
     }
   
     to {
@@ -70,7 +70,8 @@
     }
   }
 
-  
+  /* mrf51 v2022.0 */
+
 .victory-animation {
     display: inline-block;
     animation: breath 2.5s infinite;

@@ -17,8 +17,8 @@ export function About ({ id }) {
       italic: ['Core', 'stack:']
     },
     codePhilosophy: {
-      text: 'Code philosophy: Scalable - Maintainable - Efficient - Deliverable - SOLID - SAFe - Agile & Standardized.',
-      highlights: ['Scalable', 'Maintainable', 'Efficient', 'Deliverable', 'SOLID', 'SAFe', 'Agile', 'Standardized.'],
+      text: 'Code philosophy: Scalable - Maintainable - Efficient - Deliverable - SOLID - SAFe & Standardized.',
+      highlights: ['Scalable', 'Maintainable', 'Efficient', 'Deliverable', 'SOLID', 'SAFe', 'Standardized.'],
       italic: ['Code', 'philosophy:']
     }
   }
