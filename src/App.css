@@ -11,7 +11,9 @@
     --blue-color: #61afef;
     --yellow-color: #e5c07b;
     --light-blue-color: #2bbac5;
+    --position: 500px 500px;
 }
+
 
 @font-face {
     font-family: 'CascadiaCode';
