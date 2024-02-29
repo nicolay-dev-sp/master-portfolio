@@ -19,15 +19,15 @@ const socialLinks = [
 
 export function SocialLinks () {
   useEffect(() => {
-    const socialIcons = document.getElementById('links-section').querySelectorAll('section > a')
-    socialIcons.forEach((icon) => {
-      icon.classList.add('easeInOpacity')
+    const socialIcons = document.getElementById('links-section').children
+    Array.from(socialIcons).map((icon) => {
+      return icon.classList.add('easeInOpacity')
     })
   }, [])
 
   return (
     <>
-      <section className='links-section' id='links-section'>
+      <footer className='links-section' id='links-section'>
         {
           socialLinks.map((element, index) => {
             return (
@@ -43,7 +43,7 @@ export function SocialLinks () {
             )
           })
         }
-      </section>
+      </footer>
     </>
   )
 }

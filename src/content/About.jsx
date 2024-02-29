@@ -25,7 +25,7 @@ export function About ({ id }) {
 
   return (
     <>
-      <main className='main-content-section' id={id}>
+      <section className='main-content-section' id={id}>
         {Object.keys(text).map((elKey, index) => {
           return (
             <HighLightedText
@@ -36,7 +36,7 @@ export function About ({ id }) {
             />
           )
         })}
-      </main>
+      </section>
     </>
   )
 }

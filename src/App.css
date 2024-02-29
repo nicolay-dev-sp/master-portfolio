@@ -40,13 +40,14 @@ body {
     margin: 0;
     min-height: 100vh;
     background-color: var(--background-color);
-    background: radial-gradient(500px at var(--position), #2d323b, #282c34);
+    background: radial-gradient(500px at var(--position), #1d2433, #171c28);
     font-family: "Montserrat";
     font-optical-sizing: auto;
     font-style: normal;
     color: var(--background-font);
     overflow: hidden;
 }
+
 
 .basic-info-header {
     display: flex;
@@ -60,7 +61,6 @@ body {
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    /* overflow-y: hidden; */
 }
 
 

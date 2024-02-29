@@ -4,13 +4,11 @@
     flex-direction: column;
     margin: 5px 0px;
     align-items: flex-start;
-    /* color: var(--import-color); */
 }
 
 .introduction-text {
     margin: 2px 0px;
     font-weight: 300;
-    /* color: var(--import-color); */
 
 }
 
@@ -70,15 +68,8 @@
     }
   }
 
-  /* mrf51 v2022.0 */
 
 .victory-animation {
     display: inline-block;
     animation: breath 2.5s infinite;
-}
-
-
-@media screen and (max-width: 1580px) {
-  .introduction-section {
-  }
 }

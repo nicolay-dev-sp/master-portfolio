@@ -11,11 +11,11 @@ export function WrapperContent ({ selectedSection, handleSelectedSection }) {
 
   return (
     <>
-      <main className='content' id='content'>
+      <article className='content' id='content'>
         <About selectedSection={selectedSection} id='about' />
         <Projects selectedSection={selectedSection} id='experience' />
         <Studies selectedSection={selectedSection} id='studies' />
-      </main>
+      </article>
     </>
   )
 }

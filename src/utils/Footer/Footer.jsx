@@ -8,14 +8,14 @@ export function Footer () {
     <>
 
       <footer className='footer-container'>
-        <section className='copyright-section'>
+        <small className='copyright-section'>
           <p>
             Builded with <span className='react-font'>React <FontAwesomeIcon className='react-icon' icon={faReact} /></span> and powered by <span className='highlight-font'>nico-dev</span>
           </p>
           <p>
             © All rights reserved.
           </p>
-        </section>
+        </small>
 
       </footer>
     </>

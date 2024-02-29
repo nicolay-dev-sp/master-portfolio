@@ -15,9 +15,6 @@
     opacity: 1;
     scale: 1.7;
     font-weight: 750;
-    /* font-size: 25px; */
     color: var(--violet-color);
-    /* margin-right: 5px; */
     transition: all .3s ease-out;
 }
-

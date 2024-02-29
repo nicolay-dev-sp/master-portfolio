@@ -39,21 +39,21 @@ export function Projects ({ id }) {
 
   return (
     <>
-      <main id={id} className='main-content-experience-section'>
+      <section id={id} className='main-content-experience-section'>
         {
           projects.map((project, index) => {
             return <CardProject key={project + index} project={project} />
           })
         }
-        <section className='download-cv-section'>
+        <aside className='download-cv-section'>
           <a target='_blank' href='https://1drv.ms/b/s!AieWYZyae4cEhsEUUjadxqvQLvWI7A?e=bpwDLQ' rel='noreferrer'>
             <Button className='download-cv' variant='bordered' href='https://1drv.ms/b/s!AieWYZyae4cEhsEUUjadxqvQLvWI7A?e=bpwDLQ'>
               Click here for full CV <FontAwesomeIcon icon={faDownload} />
             </Button>
           </a>
 
-        </section>
-      </main>
+        </aside>
+      </section>
     </>
   )
 }

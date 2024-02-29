@@ -8,8 +8,6 @@
     scroll-snap-align: start;
     margin-left: 40px;
 
-    /* width: 80%; */
-    /* margin-top: 64px; */
     text-wrap: balance;
 }
 
@@ -47,10 +45,8 @@
 }
 
 .custom-card {
-    /* opacity: 0.9; */
     margin: 10px 10px;
     color: white;
-    /* background: rgba(255, 255, 255, 0.108); */
     background: transparent;
     box-shadow: none;
     
@@ -59,22 +55,11 @@
 
 .custom-card:hover {
     opacity: 1;
-    /* color: black; */
-    /* background: white; */
     background: rgb(255 255 255 / 3%);
     box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.8);
 
     .card-title {
         color: var(--light-blue-color);
-    }
-
-    .card-subtitle {
-        /* color: var(--violet-color); */
-    }
-
-    .tag {
-        /* --tw-text-opacity: 1;
-        color: rgb(94 234 212/var(--tw-text-opacity)); */
     }
 
     .timeline{
@@ -128,8 +113,6 @@
     box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.332);
     background-color: #ffffff1a;
     border-radius: 81px;
-    /* border: 3px; */
-    /* border-color: var(--light-blue-color); */
     color: var(--light-blue-color);
 }
 
@@ -163,9 +146,7 @@
 
 
 .custom-table {
-    /* background-color: black; */
     color: var(--background-font);
-    /* opacity: 0; */
 
 }
 

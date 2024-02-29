@@ -7,7 +7,7 @@ export function ResumeCard (params) {
   return (
     <>
       <article className='title-section'>
-        <section className='title-header'>
+        <header className='title-header'>
           <img
             src={avatar}
             alt='avatar'
@@ -19,7 +19,7 @@ export function ResumeCard (params) {
             className='web-avatar'
           />
 
-        </section>
+        </header>
         <h2 className='title-name'># Nicolay J. González</h2>
         <MainIntroduction />
       </article>

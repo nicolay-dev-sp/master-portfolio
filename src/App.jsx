@@ -29,17 +29,17 @@ export function App () {
 
   return (
     <>
-      <main className='main-container'>
+      <section className='main-container'>
         <header className='basic-info-header'>
           <ResumeCard />
           <Navigation selectedSection={selectedSection} handleSelectedSection={handleSelectedSection} />
           <SocialLinks />
         </header>
-        <section className='content-section'>
+        <main className='content-section'>
           <WrapperContent selectedSection={selectedSection} handleSelectedSection={handleSelectedSection} />
           <Footer />
-        </section>
-      </main>
+        </main>
+      </section>
     </>
   )
 }
