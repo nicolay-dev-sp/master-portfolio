@@ -5,16 +5,16 @@ import { Studies } from '../Studies'
 import { useScrollSelected } from '../../hooks/useScrollSelected'
 import { useScrolledView } from '../../hooks/useScrolledView'
 
-export function WrapperContent ({ selectedSection, handleSelectedSection }) {
-  useScrollSelected(selectedSection)
-  useScrolledView(handleSelectedSection)
+export function WrapperContent () {
+  useScrollSelected()
+  useScrolledView()
 
   return (
     <>
       <article className='content' id='content'>
-        <About selectedSection={selectedSection} id='about' />
-        <Projects selectedSection={selectedSection} id='experience' />
-        <Studies selectedSection={selectedSection} id='studies' />
+        <About id='about' />
+        <Projects id='experience' />
+        <Studies id='studies' />
       </article>
     </>
   )
