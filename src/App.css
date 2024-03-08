@@ -20,6 +20,7 @@
     src: url(./assets/fonts/CascadiaCode-Regular.otf);
     font-weight: regular;
     font-style: regular;
+    font-display: swap;
 }
 
 @font-face {
@@ -27,6 +28,7 @@
     src: url(./assets/fonts/Montserrat-Regular.ttf);
     font-weight: regular;
     font-style: regular;
+    font-display: swap;
 }
 
 @font-face {
@@ -34,6 +36,7 @@
     src: url(./assets/fonts/Montserrat-ExtraBold.ttf);
     font-weight: bold;
     font-style: bold;
+    font-display: swap;
 }
 
 body {
@@ -99,7 +102,45 @@ body {
     transition: background-color 10s ease-in-out;
 }
 
-@media screen and (max-width: 1580px) {
+
+
+@media screen and (max-width: 1044px) {
+
+    body {
+        overflow: auto;
+    }
+
+    .content-section {
+        height: auto;
+    }
+
+    .main-container {
+        flex-direction: column;
+    }
+
+    .basic-info-header {
+        height: auto;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+
+
+    .navigation {
+        margin-bottom: 35px;
+    }
+}
+
+@media screen and (min-width: 1044px) and (max-width: 1280px) {
+
+    .navigation {
+        margin-bottom: 35px;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1580px) {
     .main-container {
         width: 81vw;
     }

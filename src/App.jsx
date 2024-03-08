@@ -4,15 +4,9 @@ import { Footer } from './utils/Footer/Footer'
 import './App.css'
 import { SocialLinks } from './utils/Social/SocialLinks'
 import { WrapperContent } from './content/WrapperContent/WrapperContent'
-import { useState, useEffect } from 'react'
+import { useEffect } from 'react'
 
 export function App () {
-  const [selectedSection, setSelectedSection] = useState(null)
-
-  const handleSelectedSection = (section) => {
-    setSelectedSection(section)
-  }
-
   const mouseBgEffect = (event) => {
     document.documentElement.style.setProperty('--position', `${event.clientX}px ${event.clientY}px`)
   }
@@ -32,11 +26,11 @@ export function App () {
       <section className='main-container'>
         <header className='basic-info-header'>
           <ResumeCard />
-          <Navigation selectedSection={selectedSection} handleSelectedSection={handleSelectedSection} />
+          <Navigation />
           <SocialLinks />
         </header>
         <main className='content-section'>
-          <WrapperContent selectedSection={selectedSection} handleSelectedSection={handleSelectedSection} />
+          <WrapperContent />
           <Footer />
         </main>
       </section>

@@ -1,7 +1,9 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useContext } from 'react'
+import { MenuContext } from '../context/MenuContext'
 
-export function useScrolledView (handleSelectedSection) {
-  const [sectionOnView, setSectionOnView] = useState('about')
+export function useScrolledView () {
+  const { currentMenu, setCurrentMenu } = useContext(MenuContext)
+  const [sectionOnView, setSectionOnView] = useState(currentMenu)
 
   let timeoutId = null
 
@@ -30,6 +32,6 @@ export function useScrolledView (handleSelectedSection) {
   }, [])
 
   useEffect(() => {
-    handleSelectedSection(sectionOnView)
+    setCurrentMenu(sectionOnView)
   }, [sectionOnView])
 }

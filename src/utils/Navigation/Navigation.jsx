@@ -1,9 +1,12 @@
+import { MenuContext } from '../../context/MenuContext'
+import { useContext } from 'react'
 import './Navigation.css'
 
-export function Navigation ({ selectedSection, handleSelectedSection }) {
+export function Navigation () {
+  const { currentMenu, setCurrentMenu } = useContext(MenuContext)
+
   const handleClick = (event) => {
-    const targetSection = event.target.dataset.section
-    handleSelectedSection(targetSection)
+    setCurrentMenu(event.target.dataset.section)
   }
 
   return (
@@ -13,7 +16,7 @@ export function Navigation ({ selectedSection, handleSelectedSection }) {
           onClick={handleClick}
           data-section='about'
           className={`menu-item ${
-            selectedSection === 'about' ? 'selected-menu-item' : ''
+            currentMenu === 'about' ? 'selected-menu-item' : ''
           }`}
         >
           About
@@ -22,7 +25,7 @@ export function Navigation ({ selectedSection, handleSelectedSection }) {
           onClick={handleClick}
           data-section='experience'
           className={`menu-item ${
-            selectedSection === 'experience' ? 'selected-menu-item' : ''
+            currentMenu === 'experience' ? 'selected-menu-item' : ''
           }`}
         >
           Experience
@@ -31,7 +34,7 @@ export function Navigation ({ selectedSection, handleSelectedSection }) {
           onClick={handleClick}
           data-section='studies'
           className={`menu-item ${
-            selectedSection === 'studies' ? 'selected-menu-item' : ''
+            currentMenu === 'studies' ? 'selected-menu-item' : ''
           }`}
         >
           Studies
