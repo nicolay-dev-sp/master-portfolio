@@ -22,7 +22,8 @@
     max-width: 100px;
     height: auto;
     transform: rotate(3deg);
-    margin: 5px 22px;
+    margin: 5px 10px;
+    animation: wobble 2.5s infinite;
 }
 
 .title-name {
@@ -39,3 +40,25 @@
         margin-bottom: 15px;
     }
 }
+
+@keyframes wobble {
+    from {
+      transform: translate3d(0, 0, 0) scale(0.97);
+    }
+     
+    30% {
+      transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 3deg) scale(0.97);
+    }
+  
+    45% {
+      transform: translate3d(-7%, 0, 0) rotate3d(0, 0, 1, -3deg) scale(0.99);
+    }
+  
+    60% {
+      transform: translate3d(5%, 0, 0) rotate3d(0, 0, 1, 2deg) scale(0.97);
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0) scale(0.97);
+    }
+  }
