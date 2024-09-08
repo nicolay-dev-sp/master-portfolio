@@ -1,10 +1,11 @@
+import { Footer } from '../utils/Footer/Footer'
 import { HighLightedText } from '../utils/HighLightedText/HighLightedText'
 import './Content.css'
 
 export function About ({ id }) {
   const text = {
     introduction: {
-      text: 'Professional Software Engineer, focused on scalable Web Applications with a solid and successful track record in powered technology solutions.',
+      text: 'Hey!, Nicolay here 👋🏻, I am a professional Software Engineer, focused on scalable Web Applications with a solid and successful track record in powered technology solutions.',
       highlights: ['Web', 'Applications']
     },
     performance: {
@@ -17,7 +18,7 @@ export function About ({ id }) {
       italic: ['Core', 'stack:']
     },
     codePhilosophy: {
-      text: 'Code philosophy: Scalable - Maintainable - Efficient - Deliverable - SOLID - SAFe & Standardized.',
+      text: 'Code philosophy: Scalable - Maintainable - Efficient - Deliverable - SOLID & Standardized.',
       highlights: ['Scalable', 'Maintainable', 'Efficient', 'Deliverable', 'SOLID', 'SAFe', 'Standardized.'],
       italic: ['Code', 'philosophy:']
     }
@@ -25,7 +26,7 @@ export function About ({ id }) {
 
   return (
     <>
-      <section className='main-content-section' id={id}>
+      <section className='about-content-section' id={id}>
         {Object.keys(text).map((elKey, index) => {
           return (
             <HighLightedText
@@ -36,6 +37,7 @@ export function About ({ id }) {
             />
           )
         })}
+        <Footer />
       </section>
     </>
   )

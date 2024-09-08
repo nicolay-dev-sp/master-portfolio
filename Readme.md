@@ -2,16 +2,17 @@
 
 TODO:
 
-[x] Animate web image
-[] Improve text intro (What made me different)
-[] i18n
-[] Fix experience section with full experience
-[] Mobile Responsive
-[] Background Grid in page content
-[x] update title icon
-[] define theme vars
-[] switch theme day-night
+- [x] Animate web image
+- [x] Improve text intro (What made me different)
+- [x] update title icon
+- [x] Fix experience section with full experience
+- [] i18n
+- [] Mobile Responsive
+- [] Background Grid in page content
+- [] define theme vars
+- [] Refactor Cards components
+- [] Refine CSS Content classes, need modularity
 
 ## New Features
 
-Switch between interests (Video, photography, Coding)
+- Switch between interests (Video, photography, Coding)

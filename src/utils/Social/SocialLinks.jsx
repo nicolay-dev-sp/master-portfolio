@@ -1,7 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import {
-  faFacebook,
   faGithub,
   faInstagram,
   faLinkedin
@@ -10,10 +9,9 @@ import { useEffect } from 'react'
 import './SocialLinks.css'
 
 const socialLinks = [
-  { link: 'https://www.linkedin.com/in/nicolayjg/', icon: faLinkedin },
   { link: 'https://github.com/nicolay-dev', icon: faGithub },
+  { link: 'https://www.linkedin.com/in/nicolayjg/', icon: faLinkedin },
   { link: 'https://www.instagram.com/_.nico.fpv/', icon: faInstagram },
-  { link: 'https://www.facebook.com/profile.php?id=100068564977272', icon: faFacebook },
   { link: 'https://www.facebook.com/profile.php?id=100068564977272', icon: faEnvelope }
 ]
 

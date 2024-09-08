@@ -14,12 +14,12 @@ export function Navigation () {
       <ul className='navigation'>
         <li
           onClick={handleClick}
-          data-section='about'
+          data-section='projects'
           className={`menu-item ${
-            currentMenu === 'about' ? 'selected-menu-item' : ''
+            currentMenu === 'projects' ? 'selected-menu-item' : ''
           }`}
         >
-          About
+          Projects
         </li>
         <li
           onClick={handleClick}
@@ -38,6 +38,15 @@ export function Navigation () {
           }`}
         >
           Studies
+        </li>
+        <li
+          onClick={handleClick}
+          data-section='about'
+          className={`menu-item ${
+            currentMenu === 'about' ? 'selected-menu-item' : ''
+          }`}
+        >
+          About
         </li>
       </ul>
     </>

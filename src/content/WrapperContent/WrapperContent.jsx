@@ -1,9 +1,10 @@
 import { About } from '../About'
-import { Projects } from '../Projects'
+import { Experience } from '../Experience'
 import './WrapperContent.css'
 import { Studies } from '../Studies'
 import { useScrollSelected } from '../../hooks/useScrollSelected'
 import { useScrolledView } from '../../hooks/useScrolledView'
+import { Projects } from '../Projects'
 
 export function WrapperContent () {
   useScrollSelected()
@@ -12,9 +13,10 @@ export function WrapperContent () {
   return (
     <>
       <article className='content' id='content'>
-        <About id='about' />
-        <Projects id='experience' />
+        <Projects id='projects' />
+        <Experience id='experience' />
         <Studies id='studies' />
+        <About id='about' />
       </article>
     </>
   )

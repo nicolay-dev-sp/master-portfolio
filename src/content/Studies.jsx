@@ -22,13 +22,13 @@ export function Studies ({ id }) {
       highlight: ['Systems', 'Computing', 'Bachelor']
     },
     {
-      title: 'Certified SAFe® 5 Practitioner',
-      institute: 'Scaled Agile Inc',
-      grade: '2022',
+      title: 'AWS Cloud Practitioner',
+      institute: 'AWS',
+      grade: '2024',
       type: 'Certificate',
       icon: '',
-      link: 'https://www.credly.com/badges/73bfbf88-c0eb-4d47-a2f2-472af0df9d3c?source=linked_in_profile',
-      highlight: ['SAFe®']
+      link: 'https://1drv.ms/b/s!AieWYZyae4cEhslf6Vszc9CP7sq0MA?e=eX0ODB',
+      highlight: ['AWS']
     },
     {
       title: 'English level C1',
@@ -38,12 +38,21 @@ export function Studies ({ id }) {
       icon: '',
       link: 'https://cert.efset.org/rwgaXK',
       highlight: ['English']
+    },
+    {
+      title: 'Certified SAFe® 5 Practitioner',
+      institute: 'Scaled Agile Inc',
+      grade: '2022',
+      type: 'Certificate',
+      icon: '',
+      link: 'https://www.credly.com/badges/73bfbf88-c0eb-4d47-a2f2-472af0df9d3c?source=linked_in_profile',
+      highlight: ['SAFe®']
     }
   ]
 
   return (
     <>
-      <main id={id} className='main-content-studies-section'>
+      <section id={id} className='main-content-studies-section'>
         <Table
           aria-label='Studies & Certifications' classNames={{
             base: 'custom-wrapper-table', // table wrapper
@@ -77,7 +86,7 @@ export function Studies ({ id }) {
             }
           </TableBody>
         </Table>
-      </main>
+      </section>
     </>
   )
 }

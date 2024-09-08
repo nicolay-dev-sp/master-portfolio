@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     flex: 1;
+    gap: 20px;
 }
 
 .socialIcons {
