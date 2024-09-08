@@ -26,10 +26,11 @@
     min-height: 100%;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     align-items: flex-start;
     scroll-snap-align: start;
     text-wrap: balance;
+    padding-top: 10px;
 }
 
 .main-content-experience-section {

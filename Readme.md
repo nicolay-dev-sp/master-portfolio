@@ -6,6 +6,8 @@ TODO:
 - [x] Improve text intro (What made me different)
 - [x] update title icon
 - [x] Fix experience section with full experience
+- [x] Add projects section
+- [x] Improve styles
 - [] i18n
 - [] Mobile Responsive
 - [] Background Grid in page content
