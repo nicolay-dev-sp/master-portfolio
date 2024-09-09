@@ -63,7 +63,8 @@ body {
 .main-container {
     display: flex;
     justify-content: center;
-    margin: 0 auto;
+    padding: 0 12vw;
+    max-height: 90vh;
 }
 
 
@@ -84,16 +85,19 @@ body {
     overflow-y: hidden;
     overflow-x: hidden;
     align-items: center;
+    max-width: 920px;
+    padding-top: 9vh;
+    justify-content: center;
 }
 
 ::-webkit-scrollbar {
     width: 0.7rem;
-    border-radius: 5% 15%;
+    /* border-radius: 5% 15%; */
     background-color: #303339;
 }
 
 ::-webkit-scrollbar-thumb {
-    border-radius: 10% 10%;
+    /* border-radius: 10% 10%; */
     /* border-radius: 9px; */
     background-color: #ffffff4d;
 }
@@ -104,99 +108,3 @@ body {
 }
 
 
-
-@media screen and (max-width: 1044px) {
-
-    body {
-        overflow: auto;
-    }
-
-    .content-section {
-        height: auto;
-    }
-
-    .main-container {
-        flex-direction: column;
-    }
-
-    .basic-info-header {
-        height: auto;
-    }
-
-    .navigation {
-        display: none;
-    }
-
-
-
-    .navigation {
-        margin-bottom: 35px;
-    }
-}
-
-@media screen and (min-width: 1044px) and (max-width: 1280px) {
-
-    .navigation {
-        margin-bottom: 35px;
-    }
-}
-
-@media screen and (min-width: 1280px) and (max-width: 1580px) {
-    .main-container {
-        width: 81vw;
-    }
-
-    .navigation {
-        margin-bottom: 35px;
-    }
-}
-
-@media screen and (min-width: 1480px) and (max-width: 1700px) {
-    .main-container {
-        width: 71vw;
-    }
-}
-
-
-@media screen and (min-width: 1700px) and (max-width: 1920px) {
-    .main-container {
-        width: 62vw;
-    }
-}
-
-@media screen and (min-width: 1920px) and (max-width: 2100px) {
-    .main-container {
-        width: 55vw;
-    }
-}
-
-@media screen and (min-width: 2100px) and (max-width: 2280px) {
-    .main-container {
-        width: 50%;
-    }
-}
-
-@media screen and (min-width: 2280px) and (max-width: 2500px) {
-    .main-container {
-        width: 50%;
-    }
-}
-
-@media screen and (min-width: 2500px) {
-    .main-container {
-        width: 46%;
-    }
-}
-
-@media screen and (min-height: 700px) and (max-height: 1000px) {
-    .content {
-        margin-top: 9vh;
-    }
-}
-
-
-@media screen and (min-height: 1000px) {
-    .content {
-        margin-top: 19vh;
-    }
-}
