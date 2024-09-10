@@ -3,7 +3,7 @@ import { Card, CardBody } from '@nextui-org/react'
 export function CardProject ({ project }) {
   return (
     <Card className='custom-card'>
-      <CardBody className='card-body'>
+      <CardBody className='card-body p-0'>
         <section className='timeline'>
           <p>
             {project.startDate}-{project.endDate}

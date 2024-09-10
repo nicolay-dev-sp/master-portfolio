@@ -27,16 +27,18 @@ export function About ({ id }) {
   return (
     <>
       <section className='about-content-section' id={id}>
-        {Object.keys(text).map((elKey, index) => {
-          return (
-            <HighLightedText
-              key={elKey + index}
-              text={text[elKey].text}
-              highlightedWords={text[elKey].highlights}
-              italic={text[elKey].italic}
-            />
-          )
-        })}
+        <section className='about-text'>
+          {Object.keys(text).map((elKey, index) => {
+            return (
+              <HighLightedText
+                key={elKey + index}
+                text={text[elKey].text}
+                highlightedWords={text[elKey].highlights}
+                italic={text[elKey].italic}
+              />
+            )
+          })}
+        </section>
         <Footer />
       </section>
     </>

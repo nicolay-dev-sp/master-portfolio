@@ -63,8 +63,8 @@ body {
 .main-container {
     display: flex;
     justify-content: center;
-    padding: 0 12vw;
-    max-height: 90vh;
+    /* padding: 0 12vw; */
+    /* max-height: 90vh; */
 }
 
 
@@ -85,7 +85,7 @@ body {
     overflow-y: hidden;
     overflow-x: hidden;
     align-items: center;
-    max-width: 920px;
+    max-width: 850px;
     padding-top: 9vh;
     justify-content: center;
 }

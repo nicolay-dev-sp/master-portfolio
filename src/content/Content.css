@@ -7,7 +7,17 @@
     align-items: flex-start;
     scroll-snap-align: start;
     text-wrap: balance;
-    padding-top: 10vh;
+    /* padding-top: 10vh; */
+    margin: 0 2vw;
+}
+
+.about-text{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    height: 100%;
+    justify-content: center;
+    padding-bottom: 20vh;
 }
 
 .main-content-studies-section {
@@ -47,7 +57,7 @@
 
 .project-tags {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     gap: 25px;
 }
@@ -79,10 +89,11 @@
 
 .introduction-content {
     font-size: large;
-    padding: 13px 3px;
-    margin-left: 30px;
-    word-break: break-word;
-    white-space: normal; 
+    padding: 9px 3px;
+    padding: 0px 40px;
+    /* margin-left: 30px; */
+    word-break: keep-all;
+    white-space: normal;
 }
 
 .italic-words {
@@ -91,7 +102,7 @@
 
 .custom-card {
     margin: 10px 13px;
-    /* padding: 2px 3px 10px 3px; */
+    padding: 14px;
     color: white;
     background: transparent;
     box-shadow: none;
@@ -119,11 +130,13 @@
 
 .timeline {
     display: flex;
+    /* flex-direction: column; */
     margin-top: 4px;
     padding: 0px 15px;
     font-size: small;
     font-weight: 300;
     min-width: 100px;
+    max-width: 100px;
     justify-content: flex-end;
     color: var(--light-blue-color);
 
@@ -148,24 +161,29 @@
 
 .card-content{
     font-weight: 350;
-    font-size: 16px;
+    font-size: 15px;
     padding: 5px 0px;
-    line-height: 1.3rem;
+    line-height: 1.2rem;
     text-wrap: pretty;
 }
 
 .content-card {
-    min-width: 500px;
+    /* min-width: 500px; */
 }
 
 .tags-section {
-   margin: 15px 0px;
+   /* margin-top: 15px; */
+   display: flex;
+   gap: 15px;
+   padding-top: 7px;
+   /* display: flex;
+   flex-direction: column; */
 }
 
 .tag {
-    font-size: medium;
+    font-size: smaller;
     font-weight: 420;
-    margin-right: 11px;
+    /* margin-right: 11px; */
     padding: 5px 12px;
     box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.332);
     background-color: #ffffff1a;
