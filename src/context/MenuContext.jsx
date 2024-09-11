@@ -1,9 +1,11 @@
-import { useState, createContext } from 'react'
+import { useState, createContext, useContext } from 'react'
+import { DeviceInfoContext } from './DeviceInfoContext'
 
 export const MenuContext = createContext()
 
 export function MenuProvider ({ children }) {
-  const [currentMenu, setCurrentMenu] = useState('projects')
+  const { deviceInfo } = useContext(DeviceInfoContext)
+  const [currentMenu, setCurrentMenu] = useState(deviceInfo.isMobile ? '' : 'projects')
   return (
     <MenuContext.Provider value={{ currentMenu, setCurrentMenu }}>
       {children}

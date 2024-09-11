@@ -6,3 +6,35 @@
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
 }
+
+
+.mobile-content {
+    padding: 5px 13px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-in {
+    overflow: hidden;
+    height: 0px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out, visibility 0s 1.5s;
+}
+.fade-in-menu {
+    /* transform: translateY(20px); */
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out, visibility 0s 1.5s;
+}
+
+.fade-in.visible {
+    overflow: auto;
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out, visibility 0s;
+}

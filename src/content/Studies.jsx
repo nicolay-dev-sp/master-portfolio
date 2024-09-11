@@ -1,7 +1,10 @@
+import { useContext } from 'react'
 import { Table, TableHeader, TableColumn, TableBody, TableRow, TableCell } from '@nextui-org/react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
+import { DeviceInfoContext } from '../context/DeviceInfoContext'
 export function Studies ({ id }) {
+  const { deviceInfo } = useContext(DeviceInfoContext)
   const courses = [
     {
       title: 'MS in Software Engineering',
@@ -9,7 +12,6 @@ export function Studies ({ id }) {
       grade: '2024',
       type: 'Master of Science degree',
       icon: '',
-      link: 'https://sistemas.uniandes.edu.co/maestrias/miso/virtual/plan-de-estudios',
       highlight: ['Software', 'Master']
     },
     {
@@ -18,7 +20,6 @@ export function Studies ({ id }) {
       grade: '2019',
       type: 'Bachelor of Science degree',
       icon: '',
-      link: 'https://www.uptc.edu.co/sitio/portal/sitios/universidad/vic_aca/facultades/fac_inge/preg/ing_2760_t/02_infaca.html',
       highlight: ['Systems', 'Computing', 'Bachelor']
     },
     {
@@ -52,10 +53,10 @@ export function Studies ({ id }) {
 
   return (
     <>
-      <section id={id} className='main-content-studies-section'>
+      <section id={id} className={deviceInfo.isMobile ? 'main-content-studies-section-mobile' : 'main-content-studies-section'}>
         <Table
           aria-label='Studies & Certifications' classNames={{
-            base: 'custom-wrapper-table', // table wrapper
+            base: `${deviceInfo.isMobile ? 'custom-wrapper-table-mobile' : 'custom-wrapper-table'}`, // table wrapper
             table: 'custom-table',
             thead: '',
             tbody: '',

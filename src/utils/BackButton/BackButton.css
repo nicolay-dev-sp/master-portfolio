@@ -1,0 +1,17 @@
+.back-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 1000;
+    font-size: xx-large;
+    animation: move-left-right 1.5s infinite ease-in-out;
+}
+
+
+@keyframes move-left-right {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(-10px); }
+    100% { transform: translateX(0); }
+  }

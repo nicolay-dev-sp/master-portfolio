@@ -1,7 +1,10 @@
-import { Card, CardBody, CardFooter } from '@nextui-org/react'
+import { useContext } from 'react'
+import { Card, CardBody, CardFooter, CardHeader } from '@nextui-org/react'
 import { HighLightedText } from '../utils/HighLightedText/HighLightedText'
+import { DeviceInfoContext } from '../context/DeviceInfoContext'
 
 export function Projects ({ id }) {
+  const { deviceInfo } = useContext(DeviceInfoContext)
   const textIntroduction = {
     text: 'After six years of experience collaborating with large companies and high-impact projects, I have decided to embark on my path as an independent professional. With a strong skill set developed, I now offer creative and effective solutions to my clients.',
     highlightWords: ['large', 'companies', 'high-impact', 'projects', 'independent', 'professional.', 'creative', 'effective', 'solutions']
@@ -18,7 +21,7 @@ export function Projects ({ id }) {
   ]
 
   return (
-    <section id={id} className='main-content-projects-section'>
+    <section id={id} className={deviceInfo.isMobile ? 'main-content-projects-section-mobile' : 'main-content-projects-section'}>
       <h1 className='default-title'># Freelance Journey</h1>
       <HighLightedText text={textIntroduction.text} highlightedWords={textIntroduction.highlightWords} />
       <HighLightedText text='Check my last project:' />
@@ -28,22 +31,40 @@ export function Projects ({ id }) {
             <ul key={project} className='project-list'>
               <li className='project-item'>
                 <a href='https://biztrade.netlify.app/' target='_blank' rel='noreferrer'>
-                  <Card className='custom-card'>
+                  <Card className={deviceInfo.isMobile ? 'custom-card-mobile' : 'custom-card-project'}>
+                    {deviceInfo.isMobile
+                      ? (
+                        <CardHeader>
+                          <section className='image-section'>
+                            <img
+                              src={project.img}
+                              alt={'preview of project ' + project.name}
+                              className='object-cover rounded-xl project-preview'
+                            />
+
+                          </section>
+                        </CardHeader>
+                        )
+                      : ''}
                     <CardBody className='card-body'>
                       <section className='project-description'>
                         <h1 className='card-project-title'>{project.title}</h1>
                         <p>{project.architecture}</p>
                       </section>
                       <section className='image-section'>
+                        {!deviceInfo.isMobile
+                          ? (
+                            <img
+                              src={project.img}
+                              alt={'preview of project ' + project.name}
+                              className='object-cover rounded-xl project-preview'
+                            />
+                            )
+                          : ''}
 
-                        <img
-                          src={project.img}
-                          alt={'preview of project ' + project.name}
-                          className='object-cover rounded-xl project-preview'
-                        />
                       </section>
                     </CardBody>
-                    <CardFooter className='project-tags'>
+                    <CardFooter className={deviceInfo.isMobile ? 'project-tags-mobile' : 'project-tags'}>
                       {project.tags.map((tag, index) => {
                         return <span key={tag + index} className='tag'>{tag}</span>
                       })}

@@ -23,6 +23,7 @@ export function useScrolledView () {
 
   useEffect(() => {
     const content = document.getElementById('content')
+    if (!content) return
     content.addEventListener('scroll', debounceGetVisibleSection)
 
     return () => {

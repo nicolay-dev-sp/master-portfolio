@@ -1,9 +1,13 @@
+import { useContext } from 'react'
 import { CardProject } from '../utils/CardProject/CardProject'
 import { Button } from '@nextui-org/react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDownload } from '@fortawesome/free-solid-svg-icons'
+import { DeviceInfoContext } from '../context/DeviceInfoContext'
 
 export function Experience ({ id }) {
+  const { deviceInfo } = useContext(DeviceInfoContext)
+
   const projects = [
     {
       title: 'Identity Now',
@@ -39,13 +43,13 @@ export function Experience ({ id }) {
 
   return (
     <>
-      <section id={id} className='main-content-experience-section'>
+      <section id={id} className={deviceInfo.isMobile ? 'main-content-experience-section-mobile' : 'main-content-experience-section'}>
         {
           projects.map((project, index) => {
             return <CardProject key={project + index} project={project} />
           })
         }
-        <section className='download-cv-section'>
+        <section className={deviceInfo.isMobile ? 'download-cv-section-mobile' : 'download-cv-section'}>
           <span className='basic-text'>And much more...</span>
           <a target='_blank' href='https://1drv.ms/b/s!AieWYZyae4cEhsEUUjadxqvQLvWI7A?e=bpwDLQ' rel='noreferrer'>
             <Button className='download-cv' variant='bordered' href='https://1drv.ms/b/s!AieWYZyae4cEhsEUUjadxqvQLvWI7A?e=bpwDLQ'>
