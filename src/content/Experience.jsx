@@ -51,7 +51,7 @@ export function Experience ({ id }) {
         }
         <section className={deviceInfo.isMobile ? 'download-cv-section-mobile' : 'download-cv-section'}>
           <span className='basic-text'>And much more...</span>
-          <a target='_blank' href='https://1drv.ms/b/s!AieWYZyae4cEhsEUUjadxqvQLvWI7A?e=bpwDLQ' rel='noreferrer'>
+          <a target='_blank' href='https://1drv.ms/b/s!AieWYZyae4cEhs9WHarjBJbJXWh_1w?e=NWsrnB' rel='noreferrer'>
             <Button className='download-cv' variant='bordered' href='https://1drv.ms/b/s!AieWYZyae4cEhsEUUjadxqvQLvWI7A?e=bpwDLQ'>
               Check the full CV here<FontAwesomeIcon icon={faDownload} />
             </Button>

@@ -8,6 +8,7 @@ TODO:
 - [x] Fix experience section with full experience
 - [x] Add projects section
 - [x] Improve styles
+- [] Automate CV link download with las CV versión
 - [] i18n
 - [] Mobile Responsive
 - [] Background Grid in page content
